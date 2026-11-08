@@ -61,14 +61,17 @@ jobs:
         uses: softprops/action-gh-release@v2
         if: startsWith(github.ref, 'refs/tags/') || github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
         with:
-          tag_name: v1.0.0
-          name: Crypto Soar Radar v1.0.0
+          tag_name: v1.1.31
+          name: Crypto Soar Radar v1.1.31
           body: |
-            ### ⚡ Crypto Soar Radar v1.0.0 (Unrestricted Release)
-            - **100% Unlocked Soar (%) Screener:** Real-time crypto surge and pump probability ranking without any subscription locks.
-            - **Market Climate Weather:** Macro sentiment and market climate analysis (Bullish Sun ☀️, Range ⛅, Stormy ⚡).
-            - **Multi-Exchange Live Tickers:** Live prices, 24h change %, and volume inflow detection.
-            - **Gainers & Volume Sorters:** Instantly filter highest momentum movers.
+            ### ⚡ Crypto Soar Radar v1.1.31 (Unrestricted Full Rebuild)
+            - **5-Tab Multi-Screen Experience:** Market Dashboard, Explore Screener, Gainify Strategy Simulator, Portfolio Tracker, and More Settings.
+            - **100% Unlocked Surge & Uptrend Potential:** Instant access to short-term surge probability and multi-day uptrend cards without paywalls.
+            - **Explore Technical Screener:** Scan by 5MA x 20MA Golden/Death Cross, RSI Oversold (<30), 3+ Day Continuous Rise Streaks, and Recent Surges.
+            - **Gainify Backtester:** Simulate custom buy and sell conditions over 60 days of historical exchange data.
+            - **Exchange Switcher:** Real-time multi-exchange switching between Binance, Coinbase, Upbit, and Bithumb.
+            - **Interactive Coin Details & Profit Calculator:** Tap any coin to view live price charts, quant ratings, target prices, and dynamic profit calculator.
+            - **Surge-Plunge Alert Watcher:** Fully customizable momentum alerts.
           files: output/CryptoSoarRadar.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
